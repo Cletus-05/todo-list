@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 
 export default function Header(prop) {
   return (
@@ -28,3 +30,6 @@ export default function Header(prop) {
   )
 }
  
+Header.propTypes ={
+  title: PropTypes.string
+}
