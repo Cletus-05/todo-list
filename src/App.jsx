@@ -9,10 +9,24 @@ import Footer from './myComponents/Footer';
 
 function App() {
 
+  let todos = [
+    {
+      sno:1,
+      title:"go to the market",
+      desc:"job must be done before 6pm"
+    },
+    {
+      sno:2,
+      title:"go to gym",
+      desc:"job must be done before 6am"
+    },
+  ]
+
+
   return (
     <>
       <Header title="MyTodos-List"/>
-      <Todos/>
+      <Todos todos={todos}/>
       <Footer/>
     </>
   )
