@@ -5,6 +5,7 @@ const AddTodo = () => {
         const [title, setTitle] = useState("");
         const [desc, setdesc] = useState("");
     }
+    
   return (
     <div classNameName="container my-3">
       <h3>Add a Todo</h3>
@@ -14,7 +15,7 @@ const AddTodo = () => {
             Todo Title
           </label>
           <input
-            type="text"
+          type="text"
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
@@ -22,7 +23,9 @@ const AddTodo = () => {
             className="form-control"
             id="title"
             aria-describedby="emailHelp"
-          />
+            />
+         
+            
         </div>
         <div className="mb-3">
           <label htmFor="desc" className="form-label">
